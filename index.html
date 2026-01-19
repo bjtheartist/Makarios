@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAKARIOS - Discipleship App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              onyx: '#050505', // Deep black
+              charcoal: '#1A1A1A', // Slightly lighter black for cards
+              chrome: {
+                100: '#FFFFFF',
+                200: '#E0E0E0',
+                300: '#A0A0A0',
+                400: '#606060',
+              },
+              silver: '#C0C0C0',
+            },
+            backgroundImage: {
+              'chrome-gradient': 'linear-gradient(to bottom, #FFFFFF, #A0A0A0)',
+              'chrome-text': 'linear-gradient(to bottom, #FFFFFF 0%, #D1D5DB 50%, #9CA3AF 100%)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+      
+      .text-chrome {
+        background: linear-gradient(to bottom, #FFFFFF 0%, #D1D5DB 50%, #9CA3AF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .border-chrome {
+        border-image: linear-gradient(to bottom, #FFFFFF, #606060) 1;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body class="bg-onyx text-white antialiased h-screen w-screen overflow-hidden selection:bg-white selection:text-black">
+    <div id="root" class="h-full w-full"></div>
+  </body>
+</html>
