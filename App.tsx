@@ -11,7 +11,6 @@ import { Lessons } from './components/Lessons';
 import { Testimonies } from './components/Testimonies';
 import { Commentaries } from './components/Commentaries';
 import { User, ViewState } from './types';
-import { Crown } from 'lucide-react';
 
 const App: React.FC = () => {
   // State
@@ -59,17 +58,15 @@ const App: React.FC = () => {
   if (isLoading) {
     return (
       <div className="flex flex-col items-center justify-center h-full bg-black text-white relative overflow-hidden">
-        {/* Gradient Orbs for background ambience */}
         <div className="absolute top-[-20%] left-[-20%] w-[500px] h-[500px] bg-gray-800 rounded-full blur-[100px] opacity-20"></div>
-        
+
         <div className="text-center z-10 flex flex-col items-center animate-fade-in-up">
-            {/* Crown Logo Simulation */}
-            <div className="mb-8 relative">
-                <Crown size={80} strokeWidth={1} className="text-transparent fill-gray-300 drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]" />
-                <div className="absolute inset-0 bg-gradient-to-tr from-white to-gray-500 opacity-50 mix-blend-overlay"></div>
-            </div>
-            
-            <h1 className="font-sans text-2xl tracking-[0.4em] font-light text-white mb-8 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">
+            <img
+              src="/assets/makarios-icon.png"
+              alt="Makarios"
+              className="w-20 h-20 mb-8 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+            />
+            <h1 className="font-sans text-2xl tracking-[0.4em] font-light bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">
                 MAKARIOS
             </h1>
         </div>
