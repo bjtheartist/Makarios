@@ -1,0 +1,132 @@
+{
+  "project_info": {
+    "title": "Makarios: Your App is Ready",
+    "created": 1769121584.42835,
+    "last_updated": 1769121740.4725616,
+    "total_slides": 10
+  },
+  "slides": [
+    {
+      "id": "slide_1_title",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "slide_2_where_we_are",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "slide_3_live_test_link",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "slide_4_whats_working_backend",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "slide_5_roadmap",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "slide_6_content_migration",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "slide_7_payment_processing",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "slide_8_app_store_submission",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "slide_9_summary_next_steps",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "slide_10_thank_you",
+      "state": "edited",
+      "pageNum": 10
+    }
+  ],
+  "outline": [
+    {
+      "id": "slide_1_title",
+      "title": "Makarios: Your App is Ready",
+      "summary": "Title slide with subtitle and date.",
+      "image_plan": "/home/ubuntu/upload/search_images/OR9m5p5sysw1.jpg - The title slide needs a compelling image related to Christian apps and faith growth. Image 1, showing a phone with a faith-related title, is the most suitable and general.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_2_where_we_are",
+      "title": "Where We Are Today",
+      "summary": "Overview of the current state of the app, highlighting the completed frontend and live Firebase backend.",
+      "image_plan": "/home/ubuntu/upload/search_images/JbUIhkZ5RLsr.jpg - This slide describes the app's mission and target audience. Image 2 shows a clean, modern app interface focused on spiritual growth, which aligns well with the content.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_3_live_test_link",
+      "title": "Test the App Right Now",
+      "summary": "Provides the live test URL and instructions for testing the app.",
+      "image_plan": "/home/ubuntu/upload/search_images/bKNpPrYLMuWT.jpg - This slide lists the app's features. Image 7 shows multiple screens of a faith-based app, illustrating the concept of various features and content.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_4_whats_working_backend",
+      "title": "What's Working (Backend)",
+      "summary": "Details the live Firebase features: Authentication, User Database, Progress Tracking, and Data Persistence.",
+      "image_plan": "/home/ubuntu/upload/search_images/8qEbtROlW3Ca.webp; /home/ubuntu/upload/search_images/pqwfFSkODGYX.jpg - This slide focuses on the dark, premium design philosophy. Images 4 and 6 both showcase dark-themed app designs, which visually reinforce the slide's key point.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_5_roadmap",
+      "title": "What's Next (Roadmap)",
+      "summary": "Outlines the roadmap to App Store submission, including content migration, video hosting, payments, and push notifications.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_6_content_migration",
+      "title": "Content Migration",
+      "summary": "Explains the transition from static files to a CMS like Sanity.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_7_payment_processing",
+      "title": "Payment Processing",
+      "summary": "Details the plan for integrating Stripe for monetization.",
+      "image_plan": "/home/ubuntu/upload/search_images/e5rgTg47hZfW.webp - This slide discusses user flows and navigation. Image 3 shows a simple, clean user interface with a focus on tracking and daily use, which relates to the user experience.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_8_app_store_submission",
+      "title": "App Store Submission",
+      "summary": "Lists the requirements and options for submitting the app to the Apple App Store and Google Play Store.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_9_summary_next_steps",
+      "title": "Summary & Next Steps",
+      "summary": "Summarizes the action items for the founder and developer.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_10_thank_you",
+      "title": "Thank You",
+      "summary": "Closing slide with a call to action to launch Makarios.",
+      "image_plan": "",
+      "slide_template_key": ""
+    }
+  ]
+}

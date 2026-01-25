@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sanity/client": "^7.14.0",
+    "@sanity/image-url": "^2.0.3",
+    "firebase": "^12.8.0",
     "lucide-react": "^0.562.0",
-    "react-dom": "^19.2.3",
-    "react": "^19.2.3"
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LESSONS } from '../constants';
+import { useLessons } from '../lib/useContent';
 import { Lesson } from '../types';
 import { ArrowLeft, BookOpen, Check } from 'lucide-react';
 import { Button } from './ui/Button';
@@ -9,6 +9,7 @@ interface LessonsProps {
 }
 
 export const Lessons: React.FC<LessonsProps> = ({ onBack }) => {
+  const { data: lessons, loading } = useLessons();
   const [activeLesson, setActiveLesson] = useState<Lesson | null>(null);
   const [showQuiz, setShowQuiz] = useState(false);
   
@@ -93,7 +94,7 @@ export const Lessons: React.FC<LessonsProps> = ({ onBack }) => {
         </div>
       
       <div className="space-y-4">
-        {LESSONS.map((lesson) => (
+        {lessons.map((lesson) => (
             <div 
                 key={lesson.id}
                 onClick={() => setActiveLesson(lesson)}

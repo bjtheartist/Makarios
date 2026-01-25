@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #050505; font-family: 'Inter', sans-serif; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #050505;
+            color: #FFFFFF;
+            padding: 60px 80px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .header {
+            margin-bottom: 60px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            font-weight: 400;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            color: #C0C0C0;
+            font-weight: 300;
+        }
+        .comparison-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+            padding: 0 40px;
+        }
+        .state-card {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 0; /* Strict requirement: no rounded corners */
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .state-card.target {
+            border-color: #D4AF37;
+            background: rgba(212, 175, 55, 0.05);
+        }
+        .icon-container {
+            font-size: 60px;
+            margin-bottom: 30px;
+            color: #A0A0A0;
+        }
+        .target .icon-container {
+            color: #D4AF37;
+        }
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
+        .feature-list {
+            list-style: none;
+            text-align: left;
+            width: 100%;
+        }
+        .feature-list li {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #C0C0C0;
+            display: flex;
+            align-items: flex-start;
+        }
+        .feature-list li i {
+            margin-right: 10px;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .arrow-container {
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+            font-size: 40px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>Content Migration</h1>
+            <div class="subtitle">From Static Files to a CMS</div>
+        </div>
+        
+        <div class="comparison-container">
+            <!-- Current State -->
+            <div class="state-card">
+                <div class="icon-container">
+                    <i class="fas fa-file-code"></i>
+                </div>
+                <h3>Current State</h3>
+                <ul class="feature-list">
+                    <li><i class="fas fa-circle" style="font-size: 8px; margin-top: 8px;"></i> All content in constants.ts</li>
+                    <li><i class="fas fa-circle" style="font-size: 8px; margin-top: 8px;"></i> Static file structure</li>
+                    <li><i class="fas fa-circle" style="font-size: 8px; margin-top: 8px;"></i> Requires code changes to update</li>
+                    <li><i class="fas fa-circle" style="font-size: 8px; margin-top: 8px;"></i> Harder to scale</li>
+                </ul>
+            </div>
+
+            <!-- Arrow -->
+            <div class="arrow-container">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <!-- Target State -->
+            <div class="state-card target">
+                <div class="icon-container">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <h3>Target State</h3>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check" style="color: #D4AF37;"></i> Managed in Sanity CMS</li>
+                    <li><i class="fas fa-check" style="color: #D4AF37;"></i> No code required to edit</li>
+                    <li><i class="fas fa-check" style="color: #D4AF37;"></i> Real-time updates</li>
+                    <li><i class="fas fa-check" style="color: #D4AF37;"></i> Integrated media hosting</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

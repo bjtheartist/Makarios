@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #050505; font-family: 'Inter', sans-serif; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #050505;
+            color: #FFFFFF;
+            padding: 60px 100px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .header {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            font-weight: 400;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            color: #C0C0C0;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        .roadmap-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .roadmap-table th {
+            text-align: left;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            color: #A0A0A0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .roadmap-table td {
+            padding: 25px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-family: 'Inter', sans-serif;
+            font-size: 22px;
+            color: #FFFFFF;
+            font-weight: 300;
+        }
+        .step-col {
+            width: 10%;
+            color: #A0A0A0 !important;
+            font-family: 'Playfair Display', serif !important;
+            font-style: italic;
+        }
+        .task-col {
+            width: 50%;
+            font-weight: 400 !important;
+        }
+        .effort-col {
+            width: 20%;
+            color: #C0C0C0 !important;
+            font-size: 18px !important;
+        }
+        .priority-col {
+            width: 20%;
+            text-align: right;
+            font-weight: 500 !important;
+            font-size: 18px !important;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .priority-high {
+            color: #D4AF37;
+        }
+        .priority-medium {
+            color: #A0A0A0;
+        }
+        .priority-final {
+            color: #FFFFFF;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>What's Next (Roadmap)</h1>
+            <div class="subtitle">The Path to the App Store</div>
+        </div>
+        
+        <table class="roadmap-table">
+            <thead>
+                <tr>
+                    <th class="step-col">Step</th>
+                    <th class="task-col">Task</th>
+                    <th class="effort-col">Effort</th>
+                    <th class="priority-col">Priority</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="step-col">01</td>
+                    <td class="task-col">Content Migration to Sanity</td>
+                    <td class="effort-col">2-3 days</td>
+                    <td class="priority-col priority-high">High</td>
+                </tr>
+                <tr>
+                    <td class="step-col">02</td>
+                    <td class="task-col">Video Hosting Integration</td>
+                    <td class="effort-col">1-2 days</td>
+                    <td class="priority-col priority-high">High</td>
+                </tr>
+                <tr>
+                    <td class="step-col">03</td>
+                    <td class="task-col">Payment Processing (Stripe)</td>
+                    <td class="effort-col">2-3 days</td>
+                    <td class="priority-col priority-medium">Medium</td>
+                </tr>
+                <tr>
+                    <td class="step-col">04</td>
+                    <td class="task-col">Push Notifications</td>
+                    <td class="effort-col">1-2 days</td>
+                    <td class="priority-col priority-medium">Medium</td>
+                </tr>
+                <tr>
+                    <td class="step-col">05</td>
+                    <td class="task-col">App Store Submission</td>
+                    <td class="effort-col">1-2 weeks</td>
+                    <td class="priority-col priority-final">Final</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { PRAYER_CATEGORIES, PRAYERS } from '../constants';
+import { PRAYER_CATEGORIES } from '../constants';
+import { usePrayers } from '../lib/useContent';
 import { Prayer } from '../types';
 import { ArrowLeft, Heart, Share, Users, Compass, Sun, Briefcase, Activity } from 'lucide-react';
 import { Button } from './ui/Button';
@@ -16,6 +17,7 @@ interface PrayersProps {
 export const Prayers: React.FC<PrayersProps> = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [activePrayer, setActivePrayer] = useState<Prayer | null>(null);
+  const { data: prayers, loading } = usePrayers();
 
   // Detail View
   if (activePrayer) {
@@ -72,7 +74,7 @@ export const Prayers: React.FC<PrayersProps> = () => {
   // List View (Filtered by Category)
   if (selectedCategory) {
     const categoryTitle = PRAYER_CATEGORIES.find(c => c.id === selectedCategory)?.title;
-    const categoryPrayers = PRAYERS.filter(p => p.categoryId === selectedCategory);
+    const categoryPrayers = prayers.filter(p => p.categoryId === selectedCategory);
 
     return (
         <div className="pb-24 pt-8 px-6 min-h-full bg-onyx">

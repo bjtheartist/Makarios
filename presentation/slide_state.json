@@ -1,0 +1,168 @@
+{
+  "project_info": {
+    "title": "Makarios: Your Keys to the Kingdom",
+    "created": 1769117962.4285092,
+    "last_updated": 1769118315.6323688,
+    "total_slides": 13
+  },
+  "slides": [
+    {
+      "id": "slide_1_title",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "slide_2_what_is_makarios",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "slide_3_whats_complete",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "slide_4_design_philosophy",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "slide_5_tech_stack",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "slide_6_architecture",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "slide_7_user_flows",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "slide_8_whats_simulated",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "slide_9_roadmap",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "slide_10_content_management",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "slide_11_app_store_prep",
+      "state": "edited",
+      "pageNum": 11
+    },
+    {
+      "id": "slide_12_next_steps",
+      "state": "edited",
+      "pageNum": 12
+    },
+    {
+      "id": "slide_13_thank_you",
+      "state": "edited",
+      "pageNum": 13
+    }
+  ],
+  "outline": [
+    {
+      "id": "slide_1_title",
+      "title": "Makarios: Your Keys to the Kingdom",
+      "summary": "Title slide introducing the presentation as a founder's guide to understanding and launching the app.",
+      "image_plan": "/home/ubuntu/upload/search_images/OR9m5p5sysw1.jpg - The title slide needs a compelling image related to Christian apps and faith growth. Image 1, showing a phone with a faith-related title, is the most suitable and general.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_2_what_is_makarios",
+      "title": "What is Makarios?",
+      "summary": "Overview of the app's name origin, mission, target audience, and monetization model.",
+      "image_plan": "/home/ubuntu/upload/search_images/JbUIhkZ5RLsr.jpg - This slide describes the app's mission and target audience. Image 2 shows a clean, modern app interface focused on spiritual growth, which aligns well with the content.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_3_whats_complete",
+      "title": "The Car is Built: What's Complete",
+      "summary": "Summary of the 8 core features that are fully built and ready for users.",
+      "image_plan": "/home/ubuntu/upload/search_images/bKNpPrYLMuWT.jpg - This slide lists the app's features. Image 7 shows multiple screens of a faith-based app, illustrating the concept of various features and content.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_4_design_philosophy",
+      "title": "The Design Philosophy",
+      "summary": "Explanation of the premium, dark, and elegant design choices.",
+      "image_plan": "/home/ubuntu/upload/search_images/8qEbtROlW3Ca.webp; /home/ubuntu/upload/search_images/pqwfFSkODGYX.jpg - This slide focuses on the dark, premium design philosophy. Images 4 and 6 both showcase dark-themed app designs, which visually reinforce the slide's key point.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_5_tech_stack",
+      "title": "The Technology Stack",
+      "summary": "Overview of the modern technologies powering the app (React, TypeScript, Vite, etc.).",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_6_architecture",
+      "title": "The Architecture",
+      "summary": "Description of the component-based architecture and single-page application structure.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_7_user_flows",
+      "title": "User Flows",
+      "summary": "Explanation of the three main user flows: Guest, Registration, and Returning User.",
+      "image_plan": "/home/ubuntu/upload/search_images/e5rgTg47hZfW.webp - This slide discusses user flows and navigation. Image 3 shows a simple, clean user interface with a focus on tracking and daily use, which relates to the user experience.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_8_whats_simulated",
+      "title": "What's Simulated: The Engine Needs Fuel",
+      "summary": "Breakdown of the simulated backend components that need to be built.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_9_roadmap",
+      "title": "The Roadmap: From Prototype to Production",
+      "summary": "A 10-week roadmap outlining the path to launch.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_10_content_management",
+      "title": "Content Management",
+      "summary": "Instructions on how to manage content using the constants.ts file.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_11_app_store_prep",
+      "title": "App Store Preparation",
+      "summary": "Checklist of items needed for App Store submission.",
+      "image_plan": "/home/ubuntu/upload/search_images/GsiRujtQJFns.png - This slide discusses App Store preparation and marketing assets. Image 8 shows various app screens, which are similar to the screenshots needed for an App Store listing.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_12_next_steps",
+      "title": "Next Steps: Your Action Items",
+      "summary": "Immediate action items for the founder to move the project forward.",
+      "image_plan": "/home/ubuntu/upload/search_images/c5gw8enDchCO.jpg - This slide lists action items for the founder. Image 5 shows a dashboard with progress and statistics, which can metaphorically represent the tracking and action required for the next steps.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_13_thank_you",
+      "title": "Thank You",
+      "summary": "Closing slide emphasizing the readiness of the prototype and excitement for the future.",
+      "image_plan": "",
+      "slide_template_key": ""
+    }
+  ]
+}

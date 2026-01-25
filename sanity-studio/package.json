@@ -1,0 +1,27 @@
+{
+  "name": "makarios-studio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy"
+  },
+  "keywords": ["sanity"],
+  "author": "",
+  "license": "ISC",
+  "description": "Makarios Content Management Studio",
+  "dependencies": {
+    "@sanity/image-url": "^2.0.3",
+    "@sanity/vision": "^5.5.0",
+    "sanity": "^5.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}

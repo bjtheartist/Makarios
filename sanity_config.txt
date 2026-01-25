@@ -1,0 +1,8 @@
+# Sanity Project Configuration
+# Created: January 22, 2026
+
+PROJECT_ID: 6w7ytxw4
+ORGANIZATION_ID: oAaMEnECa
+PROJECT_NAME: Makarios Content
+PLAN: Growth Trial (30 days)
+STATUS: Active
