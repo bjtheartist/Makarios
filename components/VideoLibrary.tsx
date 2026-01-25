@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { VIDEO_COURSES } from '../constants';
+import { useVideoCourses } from '../lib/useContent';
 import { VideoCourse } from '../types';
 import { Play, ArrowLeft, Clock } from 'lucide-react';
 
@@ -8,6 +8,7 @@ interface VideoLibraryProps {
 }
 
 export const VideoLibrary: React.FC<VideoLibraryProps> = ({ onBack }) => {
+  const { data: videoCourses, loading } = useVideoCourses();
   const [activeVideo, setActiveVideo] = useState<VideoCourse | null>(null);
 
   if (activeVideo) {
@@ -40,7 +41,7 @@ export const VideoLibrary: React.FC<VideoLibraryProps> = ({ onBack }) => {
             
             <div className="mt-8 pt-8 border-t border-charcoal">
                 <h3 className="text-xs font-bold uppercase tracking-widest text-muted mb-6">Up Next</h3>
-                {VIDEO_COURSES.filter(v => v.id !== activeVideo.id).map(v => (
+                {videoCourses.filter(v => v.id !== activeVideo.id).map(v => (
                     <div key={v.id} onClick={() => setActiveVideo(v)} className="flex gap-4 mb-6 cursor-pointer group">
                         <div className="w-28 h-16 bg-charcoal rounded-lg flex-none overflow-hidden relative border border-white/5">
                              <img src={v.thumbnailUrl} alt="" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
@@ -65,7 +66,7 @@ export const VideoLibrary: React.FC<VideoLibraryProps> = ({ onBack }) => {
       <h1 className="font-serif text-3xl font-bold text-white mb-8">Video Courses</h1>
       
       <div className="grid gap-6">
-        {VIDEO_COURSES.map((course) => (
+        {videoCourses.map((course) => (
           <div 
             key={course.id} 
             onClick={() => setActiveVideo(course)}

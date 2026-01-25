@@ -1,0 +1,45 @@
+Firebase Configuration for Makarios
+=====================================
+
+Project ID: makarios-a8dd3
+Project Number: 42298603389
+App ID: 1:42298603389:web:4d5e7292c144efcab97e14
+
+Firebase Config Object:
+-----------------------
+const firebaseConfig = {
+  apiKey: "AIzaSyDH2_IQVlllC_K3siBbYOsrMfyJAQEtQhA",
+  authDomain: "makarios-a8dd3.firebaseapp.com",
+  projectId: "makarios-a8dd3",
+  storageBucket: "makarios-a8dd3.firebasestorage.app",
+  messagingSenderId: "42298603389",
+  appId: "1:42298603389:web:4d5e7292c144efcab97e14",
+  measurementId: "G-25LPYKESED"
+};
+
+
+Firebase Services Status:
+=========================
+- Authentication: ENABLED
+  - Email/Password: Enabled
+  - Google: Enabled
+  - Anonymous: Enabled
+
+- Firestore Database: ENABLED
+  - Location: nam5 (US multi-region)
+  - Collections: users
+  - User document structure:
+    - createdAt (timestamp)
+    - isGuest (boolean)
+    - name (string)
+    - progress (map)
+      - completedLessons (array)
+      - completedVideos (array)
+      - currentStreak (number)
+      - lastActiveDate (string)
+      - lastPrayerId (string)
+      - lastWatchedVideoId (string)
+      - longestStreak (number)
+      - prayersRead (array)
+      - quizScores (map)
+      - savedPrayers (array)

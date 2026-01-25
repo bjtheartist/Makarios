@@ -1,5 +1,5 @@
 import React from 'react';
-import { TESTIMONIES } from '../constants';
+import { useTestimonies } from '../lib/useContent';
 import { ArrowLeft, PlayCircle } from 'lucide-react';
 
 interface TestimoniesProps {
@@ -7,6 +7,8 @@ interface TestimoniesProps {
 }
 
 export const Testimonies: React.FC<TestimoniesProps> = ({ onBack }) => {
+  const { data: testimonies, loading } = useTestimonies();
+
   return (
     <div className="pb-24 pt-8 px-6 bg-onyx min-h-full">
         <div className="flex items-center gap-4 mb-8">
@@ -20,7 +22,7 @@ export const Testimonies: React.FC<TestimoniesProps> = ({ onBack }) => {
         </div>
 
         <div className="grid gap-6">
-            {TESTIMONIES.map((t) => (
+            {testimonies.map((t) => (
                 <div key={t.id} className="bg-black rounded-[2rem] overflow-hidden border border-gray-800 group cursor-pointer hover:border-gray-600 transition-all">
                     <div className="flex p-6 gap-5">
                         <img 

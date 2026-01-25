@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #050505; font-family: 'Inter', sans-serif; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px; /* keep as required */
+            background-color: #050505;
+            color: #FFFFFF;
+            padding: 60px 80px 40px; /* keep top padding, reduce bottom to save height */
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .header {
+            margin-bottom: 30px; /* reduced from 50 to pull content up */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            font-weight: 400;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            color: #C0C0C0;
+            font-weight: 300;
+        }
+        .content-wrapper {
+            display: flex;
+            gap: 40px; /* slightly tighter */
+            flex: 1;
+        }
+        .column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .column-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #D4AF37;
+            margin-bottom: 20px; /* reduced spacing */
+            border-left: 3px solid #D4AF37;
+            padding-left: 20px;
+        }
+        .requirement-list {
+            list-style: none;
+        }
+        .requirement-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px; /* reduced from 25 */
+            background: rgba(255, 255, 255, 0.03);
+            padding: 12px; /* reduced from 20 */
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .requirement-item:last-child { margin-bottom: 0; }
+        .req-icon {
+            font-size: 28px;
+            color: #FFFFFF;
+            width: 50px;
+            text-align: center;
+            margin-right: 16px; /* slightly reduced */
+        }
+        .req-text {
+            flex: 1;
+        }
+        .req-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-bottom: 4px;
+        }
+        .req-detail {
+            font-size: 14px;
+            color: #A0A0A0;
+        }
+        .option-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 16px; /* reduced from 30 */
+            border-radius: 8px;
+            margin-bottom: 16px; /* reduced from 30 */
+        }
+        .option-card:last-child { margin-bottom: 0; }
+        .option-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px; /* reduced from 15 */
+        }
+        .option-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+        .option-badge {
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: 4px 8px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+        }
+        .badge-pwa {
+            background: rgba(212, 175, 55, 0.2);
+            color: #D4AF37;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .badge-native {
+            background: rgba(192, 192, 192, 0.2);
+            color: #C0C0C0;
+            border: 1px solid rgba(192, 192, 192, 0.3);
+        }
+        .option-desc {
+            font-size: 16px;
+            color: #A0A0A0;
+            line-height: 1.5;
+            margin: 0; /* remove default p margin */
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>App Store Submission</h1>
+            <div class="subtitle">Getting Your App to the World</div>
+        </div>
+        
+        <div class="content-wrapper">
+            <div class="column">
+                <div class="column-title">Requirements</div>
+                <ul class="requirement-list">
+                    <li class="requirement-item">
+                        <div class="req-icon"><i class="fab fa-apple"></i></div>
+                        <div class="req-text">
+                            <div class="req-name">Apple Developer Account</div>
+                            <div class="req-detail">$99/year membership fee</div>
+                        </div>
+                    </li>
+                    <li class="requirement-item">
+                        <div class="req-icon"><i class="fab fa-google-play"></i></div>
+                        <div class="req-text">
+                            <div class="req-name">Google Play Console</div>
+                            <div class="req-detail">$25 one-time registration fee</div>
+                        </div>
+                    </li>
+                    <li class="requirement-item">
+                        <div class="req-icon"><i class="fas fa-images"></i></div>
+                        <div class="req-text">
+                            <div class="req-name">Store Assets</div>
+                            <div class="req-detail">Icons, screenshots (all sizes)</div>
+                        </div>
+                    </li>
+                    <li class="requirement-item">
+                        <div class="req-icon"><i class="fas fa-file-contract"></i></div>
+                        <div class="req-text">
+                            <div class="req-name">Legal Documents</div>
+                            <div class="req-detail">Privacy Policy &amp; Terms of Service</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="column">
+                <div class="column-title">Deployment Options</div>
+                
+                <div class="option-card">
+                    <div class="option-header">
+                        <div class="option-title">Web App (PWA)</div>
+                        <span class="option-badge badge-pwa">Immediate</span>
+                    </div>
+                    <p class="option-desc">
+                        Launch immediately without store review. Users can add to home screen. No fees, instant updates, but less discoverability.
+                    </p>
+                </div>
+                
+                <div class="option-card">
+                    <div class="option-header">
+                        <div class="option-title">Native App</div>
+                        <span class="option-badge badge-native">Recommended</span>
+                    </div>
+                    <p class="option-desc">
+                        Full presence on App Store and Google Play. Higher trust, better discoverability, and access to native features. Requires 1-2 week review.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

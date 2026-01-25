@@ -15,8 +15,8 @@
               serif: ['Playfair Display', 'serif'],
             },
             colors: {
-              onyx: '#050505', // Deep black
-              charcoal: '#1A1A1A', // Slightly lighter black for cards
+              onyx: '#050505',
+              charcoal: '#1A1A1A',
               chrome: {
                 100: '#FFFFFF',
                 200: '#E0E0E0',
@@ -24,24 +24,34 @@
                 400: '#606060',
               },
               silver: '#C0C0C0',
+              gold: '#D4AF37',
+              muted: '#6B7280',
+              error: '#EF4444',
             },
             backgroundImage: {
               'chrome-gradient': 'linear-gradient(to bottom, #FFFFFF, #A0A0A0)',
               'chrome-text': 'linear-gradient(to bottom, #FFFFFF 0%, #D1D5DB 50%, #9CA3AF 100%)',
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.5s ease-out',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
             }
           }
         }
       }
     </script>
     <style>
-      /* Hide scrollbar for Chrome, Safari and Opera */
       .no-scrollbar::-webkit-scrollbar {
           display: none;
       }
-      /* Hide scrollbar for IE, Edge and Firefox */
       .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
+          -ms-overflow-style: none;
+          scrollbar-width: none;
       }
       
       .text-chrome {
@@ -55,7 +65,7 @@
         border-image: linear-gradient(to bottom, #FFFFFF, #606060) 1;
       }
     </style>
-</head>
+  </head>
   <body class="bg-onyx text-white antialiased h-screen w-screen overflow-hidden selection:bg-white selection:text-black">
     <div id="root" class="h-full w-full"></div>
     <script type="module" src="/index.tsx"></script>

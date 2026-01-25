@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { -webkit-font-smoothing: antialiased; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #050505;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            position: relative;
+            overflow: hidden;
+            padding: 80px 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Decorative Background */
+        .bg-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: 0;
+            mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+            -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+        }
+
+        .content-wrapper {
+            z-index: 1;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 22px;
+            font-weight: 300;
+            color: #D4AF37;
+            margin-bottom: 32px; /* reduced to save vertical space */
+            letter-spacing: 0.02em;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tech-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* reduced gap */
+            width: 100%;
+        }
+
+        .tech-item {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 12px; /* reduced padding */
+            position: relative;
+        }
+
+        .tech-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+        }
+
+        .icon-wrapper {
+            width: 64px; /* reduced size */
+            height: 64px; /* reduced size */
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px; /* reduced */
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.05);
+        }
+
+        .icon-wrapper i {
+            font-size: 32px;
+            color: #D4AF37;
+        }
+
+        .tech-item h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #E0E0E0;
+            margin-bottom: 12px;
+        }
+
+        .tech-item p {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            color: #AAAAAA;
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="bg-lines"></div>
+        
+        <div class="content-wrapper">
+            <h1>The Technology Stack</h1>
+            <h2>Makarios is built on a modern, robust, and industry-standard technology stack</h2>
+            
+            <div class="tech-grid">
+                <!-- Row 1 -->
+                <div class="tech-item">
+                    <div class="icon-wrapper">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React 19</h3>
+                    <p>Core UI library for interactive components.</p>
+                </div>
+
+                <div class="tech-item">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>TypeScript</h3>
+                    <p>Type safety for more reliable code.</p>
+                </div>
+
+                <div class="tech-item">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Vite</h3>
+                    <p>Fast build tool for rapid development.</p>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="tech-item">
+                    <div class="icon-wrapper">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>Tailwind CSS</h3>
+                    <p>Utility-first CSS framework.</p>
+                </div>
+
+                <div class="tech-item">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-icons"></i>
+                    </div>
+                    <h3>Lucide React</h3>
+                    <p>Clean, consistent icon library.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

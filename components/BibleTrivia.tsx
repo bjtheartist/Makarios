@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { TRIVIA_BOOKS, TRIVIA_QUESTIONS } from '../constants';
+import { useTriviaBooks } from '../lib/useContent';
+import { TRIVIA_QUESTIONS } from '../constants';
 import { ArrowLeft, CheckCircle, XCircle } from 'lucide-react';
 import { Button } from './ui/Button';
 
@@ -8,6 +9,7 @@ interface BibleTriviaProps {
 }
 
 export const BibleTrivia: React.FC<BibleTriviaProps> = ({ onBack }) => {
+  const { data: triviaBooks, loading } = useTriviaBooks();
   const [selectedBook, setSelectedBook] = useState<string | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
@@ -121,7 +123,7 @@ export const BibleTrivia: React.FC<BibleTriviaProps> = ({ onBack }) => {
       <p className="text-gray-400 mb-8 font-light">Test your knowledge. Select a book to begin.</p>
       
       <div className="grid grid-cols-2 gap-4">
-        {TRIVIA_BOOKS.map((book) => (
+        {triviaBooks.map((book) => (
             <button 
                 key={book.id}
                 onClick={() => handleBookSelect(book.id)}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { -webkit-font-smoothing: antialiased; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #050505;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            position: relative;
+            overflow: hidden;
+            padding: 80px 100px;
+            display: flex;
+            gap: 80px;
+            align-items: center;
+        }
+
+        /* Background Texture */
+        .bg-dots {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+            z-index: 0;
+            mask-image: linear-gradient(to left, black 0%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to left, black 0%, transparent 100%);
+        }
+
+        .content-col {
+            flex: 1;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+            color: #D4AF37;
+            margin-bottom: 28px; /* Reduced to save vertical space */
+            letter-spacing: 0.02em;
+            opacity: 0.9;
+            border-left: 3px solid #D4AF37;
+            padding-left: 20px;
+        }
+
+        .info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 18px; /* Reduced from 32px */
+        }
+
+        .info-item {
+            display: flex;
+            gap: 16px; /* Slightly reduced */
+            align-items: flex-start;
+        }
+
+        .info-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #D4AF37;
+            font-size: 18px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .info-text h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #E0E0E0;
+            margin-bottom: 6px;
+        }
+
+        .info-text p {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            color: #AAAAAA;
+            line-height: 1.5;
+        }
+
+        .code-col {
+            flex: 1;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .code-window {
+            width: 100%;
+            background: #0F0F0F;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+
+        .window-header {
+            background: #1A1A1A;
+            padding: 10px 16px; /* slightly reduced */
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .dot-red { background: #FF5F56; }
+        .dot-yellow { background: #FFBD2E; }
+        .dot-green { background: #27C93F; }
+
+        .filename {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            color: #888888;
+            margin-left: 12px;
+        }
+
+        .code-content {
+            padding: 16px; /* reduced from 24px */
+            font-family: 'Fira Code', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #D4D4D4;
+        }
+
+        .keyword { color: #D4AF37; } /* Gold for keywords */
+        .string { color: #CE9178; } /* Muted orange for strings */
+        .comment { color: #6A9955; font-style: italic; } /* Green for comments */
+        .variable { color: #9CDCFE; } /* Blue for variables */
+
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="bg-dots"></div>
+        
+        <div class="content-col">
+            <h1>Content Management</h1>
+            <h2>How to Add Content Today</h2>
+
+            <div class="info-list">
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-folder-open"></i></div>
+                    <div class="info-text">
+                        <h3>File Location</h3>
+                        <p>All content is centralized in <code>/Makarios/constants.ts</code> for easy access and modification.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-list-ul"></i></div>
+                    <div class="info-text">
+                        <h3>Data Structure</h3>
+                        <p>Content is organized into clear arrays (e.g., <code>PRAYERS</code>, <code>LESSONS</code>) making it intuitive to navigate.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-edit"></i></div>
+                    <div class="info-text">
+                        <h3>Editing Process</h3>
+                        <p>Simply modify the text within the objects to update prayers, questions, or video details instantly.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="info-text">
+                        <h3>Future Evolution</h3>
+                        <p>This static file will be replaced by a user-friendly Headless CMS in the next development phase.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="code-col">
+            <div class="code-window">
+                <div class="window-header">
+                    <div class="dot dot-red"></div>
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-green"></div>
+                    <span class="filename">constants.ts</span>
+                </div>
+                <div class="code-content">
+                    <span class="keyword">export const</span> <span class="variable">DAILY_VERSE</span> = {<br>
+                    &nbsp;&nbsp;text: <span class="string">"For I know the thoughts..."</span>,<br>
+                    &nbsp;&nbsp;reference: <span class="string">"Jeremiah 29:11"</span><br>
+                    };<br>
+                    <br>
+                    <span class="comment">// Add new prayers here</span><br>
+                    <span class="keyword">export const</span> <span class="variable">PRAYERS</span> = [<br>
+                    &nbsp;&nbsp;{<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;id: <span class="string">'love-1'</span>,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;title: <span class="string">"Experiencing God's Love"</span>,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;content: <span class="string">"Father, open my eyes..."</span><br>
+                    &nbsp;&nbsp;},<br>
+                    &nbsp;&nbsp;<span class="comment">/* ... more items ... */</span><br>
+                    ];
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
